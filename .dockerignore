@@ -14,13 +14,13 @@
 *.webm
 
 # Models
-*.ckpt
-*.safetensors
-*.pth
-*.bin
-*.onnx
-*.torchscript
-*.engine
+#*.ckpt
+#*.safetensors
+#*.pth
+#*.bin
+#*.onnx
+#*.torchscript
+#*.engine
 # .pt files are used by efficiency-nodes-comfyui
 
 # Files
@@ -36,8 +36,11 @@ downloaded_user_models/
 ComfyUI/venv
 ComfyUI/temp
 ComfyUI/user
-ComfyUI/models
-ComfyUI/custom_nodes/comfyUI_controlnet_aux/ckpts
+#ComfyUI/models
+ComfyUI/models/diffusion_models/flux1-dev-fp8-e4m3fn.safetensors
+ComfyUI/models/BiRefNet
+ComfyUI/models/controlnet
+#ComfyUI/custom_nodes/comfyUI_controlnet_aux/ckpts
 ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved/models
 ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved/motion_lora
 ComfyUI/custom_nodes/efficiency-nodes-comfyui/images

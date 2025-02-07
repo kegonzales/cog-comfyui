@@ -27,11 +27,11 @@ build:
     - websocket-client==1.6.3
     - diffusers>=0.31.0
 
-    # ComfyUI-AdvancedLivePortrait
-    - dill
-
     # Inspire
     - webcolors
+
+    # ComfyUI-Inspyrenet-Rembg
+    - transparent-background
 
     # fix for pydantic issues in cog
     # https://github.com/replicate/cog/issues/1623
@@ -46,24 +46,6 @@ build:
     - pilgram
     - scikit-learn
     - rembg
-
-    # ComfyUI_essentials
-    - numba
-
-    # ComfyUI_FizzNodes
-    - pandas
-    - numexpr
-
-    # comfyui-reactor-node
-    - insightface
-    - onnx
-
-    # ComfyUI-Impact-Pack
-    - segment-anything
-    - piexif
-
-    # ComfyUI-Impact-Subpack
-    - ultralytics!=8.0.177
 
     # comfyui_segment_anything
     - timm
@@ -86,22 +68,20 @@ build:
     - yacs
     - trimesh[easy]
 
-    # ComfyUI-KJNodes
-    - librosa
-    - color-matcher
-
-    # PuLID
-    - facexlib
-
-    # SUPIR
-    - open-clip-torch>=2.24.0
-    - pytorch-lightning>=2.2.1
+    # ComfyUI-Easy-Use
+    - clip_interrogator>=0.6.0
+    - lark
+    - onnxruntime
+    - opencv-python
+    - sentencepiece
+    - spandrel
+    - matplotlib
+    - peft
 
     # For train.py and custom loras
     - huggingface_hub[hf-transfer]
 
-    # ComfyUI-segment-anything-2
-    - iopath
+
   run:
     - curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/latest/download/pget_$(uname -s)_$(uname -m)" && chmod +x /usr/local/bin/pget
     - pip install onnxruntime-gpu --extra-index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-12/pypi/simple/
